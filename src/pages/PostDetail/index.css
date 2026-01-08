@@ -1,0 +1,144 @@
+/* src/pages/PostDetail/index.css */
+.post-detail-content {
+  min-height: calc(100vh - 128px);
+  padding: 24px;
+  background: #f0f2f5;
+  color: #000;
+}
+
+/* 暗色主题下的文章详情内容 */
+.post-detail-content.dark {
+  background: #141414; /* 设置为黑色 */
+  color: #ffffff;
+}
+
+.post-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff; /* 默认背景为白色 */
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* 暗色主题下的容器背景 */
+.post-detail-container.dark {
+  background: #1f1f1f; /* 暗色主题背景 */
+  color: #ffffff;
+}
+
+.post-detail-header {
+  margin-bottom: 30px;
+}
+
+.post-detail-title {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: #001529;
+}
+
+/* 暗色主题下的文章标题 */
+.post-detail-title.dark {
+  color: #ffffff;
+}
+
+.post-detail-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+/* 暗色主题下的文章元信息 */
+.post-detail-meta.dark {
+  color: #aaaaaa;
+}
+
+.post-detail-content-inner {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #595959;
+}
+
+/* 暗色主题下的文章内容 */
+.post-detail-content-inner.dark {
+  color: #aaaaaa;
+}
+
+.post-detail-tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-item {
+  margin: 0 !important;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 16px;
+  padding: 4px 12px;
+  border: none;
+  background: linear-gradient(45deg, #1890ff, #52c41a);
+  color: white;
+}
+
+.tag-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 暗色主题下的标签项 */
+.tag-item.dark {
+  background: linear-gradient(45deg, #1890ff, #52c41a);
+}
+
+.post-detail-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.post-detail-actions .ant-btn {
+  padding: 8px 16px;
+}
+
+/* 暗色主题下的操作按钮 */
+.post-detail-actions.dark .ant-btn {
+  border-color: #434343;
+  color: #aaaaaa;
+}
+
+.post-detail-actions.dark .ant-btn:hover {
+  background: #2a2a2a;
+  border-color: #1890ff;
+  color: #1890ff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .post-detail-content {
+    padding: 16px;
+  }
+  
+  .post-detail-container {
+    width: 100%;
+  }
+  
+  .post-detail-title {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  
+  .post-detail-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .post-detail-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

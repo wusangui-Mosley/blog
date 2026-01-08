@@ -1,0 +1,163 @@
+/* src/pages/EditPost/index.css */
+.editpost-content {
+  min-height: calc(100vh - 128px);
+  padding: 24px;
+  background: #f0f2f5;
+  color: #000;
+}
+
+.editpost-content.dark {
+  background: #141414;
+  color: #ffffff;
+}
+
+.editpost-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.editpost-card.dark {
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+.editpost-card .ant-card-head {
+  background: transparent;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.editpost-card.dark .ant-card-head {
+  border-bottom: 1px solid #434343;
+}
+
+.editpost-card .ant-card-head-title {
+  color: #001529;
+}
+
+.editpost-card.dark .ant-card-head-title {
+  color: #ffffff;
+}
+
+.editpost-form .ant-form-item-label > label {
+  color: #595959;
+}
+
+.editpost-form.dark .ant-form-item-label > label {
+  color: #d9d9d9;
+}
+
+.editpost-form .ant-input,
+.editpost-form .ant-input-affix-wrapper,
+.editpost-form .ant-select-selector,
+.editpost-form .ant-input-number {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  color: #000000;
+}
+
+.editpost-form.dark .ant-input,
+.editpost-form.dark .ant-input-affix-wrapper,
+.editpost-form.dark .ant-select-selector,
+.editpost-form.dark .ant-input-number {
+  background-color: #2a2a2a;
+  border-color: #434343;
+  color: #ffffff;
+}
+
+.editpost-form .ant-input:focus,
+.editpost-form .ant-input-affix-wrapper:focus,
+.editpost-form .ant-select-selector:focus,
+.editpost-form .ant-input-number:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.editpost-form.dark .ant-input:focus,
+.editpost-form.dark .ant-input-affix-wrapper:focus,
+.editpost-form.dark .ant-select-selector:focus,
+.editpost-form.dark .ant-input-number:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.editpost-form .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.editpost-form.dark .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.editpost-form .ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.editpost-form.dark .ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.editpost-form .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.editpost-form.dark .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.editpost-form .ant-btn-default {
+  border-color: #d9d9d9;
+  color: #595959;
+}
+
+.editpost-form.dark .ant-btn-default {
+  border-color: #434343;
+  color: #d9d9d9;
+}
+
+.editpost-form .ant-btn-default:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+.editpost-form.dark .ant-btn-default:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+.editpost-form .ant-upload {
+  background: #fafafa;
+  border: 1px dashed #d9d9d9;
+}
+
+.editpost-form.dark .ant-upload {
+  background: #2a2a2a;
+  border: 1px dashed #434343;
+}
+
+.editpost-form .ant-upload:hover {
+  border-color: #1890ff;
+}
+
+.editpost-form.dark .ant-upload:hover {
+  border-color: #1890ff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .editpost-content {
+    padding: 16px;
+  }
+  
+  .editpost-card {
+    padding: 20px;
+  }
+}

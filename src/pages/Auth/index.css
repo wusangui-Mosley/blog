@@ -1,0 +1,124 @@
+/* src/pages/Auth/index.css */
+.auth-content {
+  min-height: calc(100vh - 128px);
+  padding: 24px;
+  background: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 暗色主题下的认证内容容器 */
+.auth-content.dark {
+  background: #141414;
+  color: #ffffff;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* 暗色主题下的认证卡片 */
+.auth-card.dark {
+  background: #1f1f1f;
+  border: 1px solid #434343;
+  box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-title {
+  margin-bottom: 8px !important;
+  color: #001529;
+}
+
+/* 暗色主题下的标题颜色 */
+.auth-title.dark {
+  color: #ffffff;
+}
+
+.auth-tabs .ant-tabs-nav {
+  margin-bottom: 24px !important;
+}
+
+.auth-tabs .ant-tabs-tab {
+  font-size: 16px;
+  padding: 12px 0;
+}
+
+/* 暗色主题下的标签页 */
+.auth-tabs.dark .ant-tabs-tab {
+  color: #aaaaaa;
+}
+
+.auth-tabs.dark .ant-tabs-tab-active {
+  color: #1890ff;
+}
+
+.auth-forgot-password {
+  text-align: right;
+}
+
+.auth-forgot-password a {
+  color: #1890ff;
+  font-size: 14px;
+}
+
+.auth-forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.auth-social-login .ant-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-social-login .ant-btn:first-child {
+  border-color: #24292e;
+  color: #24292e;
+}
+
+.auth-social-login .ant-btn:first-child:hover {
+  background: #24292e;
+  color: white;
+}
+
+.auth-social-login .ant-btn:last-child {
+  border-color: #4285f4;
+  color: #4285f4;
+}
+
+.auth-social-login .ant-btn:last-child:hover {
+  background: #4285f4;
+  color: white;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .auth-content {
+    padding: 16px;
+  }
+  
+  .auth-container {
+    max-width: 100%;
+  }
+  
+  .auth-card {
+    box-shadow: none;
+  }
+  
+  .auth-header {
+    margin-bottom: 16px;
+  }
+}

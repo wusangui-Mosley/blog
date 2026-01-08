@@ -1,0 +1,219 @@
+/* src/pages/Archive/index.css */
+.archive-content {
+  min-height: calc(100vh - 128px);
+  padding: 24px;
+  background: #f0f2f5;
+  color: #000;
+}
+
+.archive-content.dark {
+  background: #141414;
+  color: #ffffff;
+}
+
+.archive-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.archive-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #001529;
+}
+
+.archive-title.dark {
+  color: #ffffff;
+}
+
+.archive-title .anticon {
+  margin-right: 10px;
+}
+
+.archive-year-section {
+  margin-bottom: 40px;
+}
+
+.archive-year-title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #001529;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.archive-year-title.dark {
+  color: #ffffff;
+  border-bottom: 2px solid #434343;
+}
+
+.archive-timeline .ant-timeline {
+  margin-top: 20px;
+}
+
+.archive-timeline .ant-timeline-item {
+  padding-bottom: 20px;
+}
+
+.archive-timeline .ant-timeline-item-content {
+  top: -6px;
+}
+
+.archive-post-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  transition: all 0.3s;
+  background: #ffffff;
+  color: #000;
+}
+
+.archive-post-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #1890ff;
+}
+
+.archive-post-card.dark {
+  border: 1px solid #434343;
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+.archive-post-card.dark:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  border-color: #1890ff;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.post-date.dark {
+  color: #aaaaaa;
+}
+
+.post-category {
+  font-size: 12px;
+  margin: 0;
+}
+
+.post-category.dark {
+  color: #ffffff;
+}
+
+.post-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.post-title.dark {
+  color: #ffffff;
+}
+
+.post-excerpt {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-top: 8px;
+}
+
+.post-excerpt.dark {
+  color: #aaaaaa;
+}
+
+.archive-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.archive-loading.dark {
+  color: #ffffff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .archive-content {
+    padding: 16px;
+  }
+  
+  .archive-container {
+    width: 100%;
+  }
+  
+  .archive-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .archive-year-section {
+    margin-bottom: 30px;
+  }
+  
+  .post-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .archive-timeline .ant-timeline-item {
+    padding-bottom: 15px;
+  }
+}/* src/pages/Archive/index.css */
+.archive-tree {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 暗色主题下的树状图容器 */
+.archive-tree.dark {
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+/* 树状图节点样式 */
+.archive-tree .ant-tree-node-content-wrapper {
+  padding: 8px 16px;
+}
+
+.archive-tree .ant-tree-node-content-wrapper:hover {
+  background-color: #f5f5f5;
+}
+
+/* 暗色主题下的节点悬停效果 */
+.archive-tree.dark .ant-tree-node-content-wrapper:hover {
+  background-color: #2a2a2a;
+}
+
+/* 选中节点样式 */
+.archive-tree .ant-tree-node-selected {
+  background-color: #e6f7ff;
+  border-left: 3px solid #1890ff;
+}
+
+/* 暗色主题下的选中节点 */
+.archive-tree.dark .ant-tree-node-selected {
+  background-color: #2a2a2a;
+  border-left: 3px solid #1890ff;
+}
+
+/* 选中节点的文字颜色 */
+.archive-tree .ant-tree-node-selected > .ant-tree-node-content-wrapper {
+  color: #1890ff;
+}
+
+/* 暗色主题下的选中节点文字颜色 */
+.archive-tree.dark .ant-tree-node-selected > .ant-tree-node-content-wrapper {
+  color: #1890ff;
+}

@@ -1,0 +1,163 @@
+/* src/pages/WritePost/index.css */
+.writepost-content {
+  min-height: calc(100vh - 128px);
+  padding: 24px;
+  background: #f0f2f5;
+  color: #000;
+}
+
+.writepost-content.dark {
+  background: #141414;
+  color: #ffffff;
+}
+
+.writepost-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.writepost-card.dark {
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+.writepost-card .ant-card-head {
+  background: transparent;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.writepost-card.dark .ant-card-head {
+  border-bottom: 1px solid #434343;
+}
+
+.writepost-card .ant-card-head-title {
+  color: #001529;
+}
+
+.writepost-card.dark .ant-card-head-title {
+  color: #ffffff;
+}
+
+.writepost-form .ant-form-item-label > label {
+  color: #595959;
+}
+
+.writepost-form.dark .ant-form-item-label > label {
+  color: #d9d9d9;
+}
+
+.writepost-form .ant-input,
+.writepost-form .ant-input-affix-wrapper,
+.writepost-form .ant-select-selector,
+.writepost-form .ant-input-number {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  color: #000000;
+}
+
+.writepost-form.dark .ant-input,
+.writepost-form.dark .ant-input-affix-wrapper,
+.writepost-form.dark .ant-select-selector,
+.writepost-form.dark .ant-input-number {
+  background-color: #2a2a2a;
+  border-color: #434343;
+  color: #ffffff;
+}
+
+.writepost-form .ant-input:focus,
+.writepost-form .ant-input-affix-wrapper:focus,
+.writepost-form .ant-select-selector:focus,
+.writepost-form .ant-input-number:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.writepost-form.dark .ant-input:focus,
+.writepost-form.dark .ant-input-affix-wrapper:focus,
+.writepost-form.dark .ant-select-selector:focus,
+.writepost-form.dark .ant-input-number:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.writepost-form .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.writepost-form.dark .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.writepost-form .ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.writepost-form.dark .ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.writepost-form .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.writepost-form.dark .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.writepost-form .ant-btn-default {
+  border-color: #d9d9d9;
+  color: #595959;
+}
+
+.writepost-form.dark .ant-btn-default {
+  border-color: #434343;
+  color: #d9d9d9;
+}
+
+.writepost-form .ant-btn-default:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+.writepost-form.dark .ant-btn-default:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+.writepost-form .ant-upload {
+  background: #fafafa;
+  border: 1px dashed #d9d9d9;
+}
+
+.writepost-form.dark .ant-upload {
+  background: #2a2a2a;
+  border: 1px dashed #434343;
+}
+
+.writepost-form .ant-upload:hover {
+  border-color: #1890ff;
+}
+
+.writepost-form.dark .ant-upload:hover {
+  border-color: #1890ff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .writepost-content {
+    padding: 16px;
+  }
+  
+  .writepost-card {
+    padding: 20px;
+  }
+}

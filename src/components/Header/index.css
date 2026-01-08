@@ -1,0 +1,104 @@
+/* src/components/Header/index.css */
+.app-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+    background: #001529 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.app-header.dark {
+    background: #1f1f1f !important;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 64px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.header-menu {
+    flex: 1;
+    border-bottom: none !important;
+    background: transparent !important;
+    margin-left: 30px;
+}
+
+.header-menu .ant-menu-item {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.header-menu .ant-menu-item:hover {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.header-menu .ant-menu-item-selected {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons .ant-btn {
+    border-radius: 4px;
+}
+
+.user-dropdown-btn {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    color: rgba(255, 255, 255, 0.85) !important;
+    border-radius: 4px;
+    height: auto;
+}
+
+.user-dropdown-btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+}
+
+.username-text {
+    margin: 0 8px;
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.user-dropdown-btn:hover .username-text {
+    color: #fff !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 0 12px;
+    }
+    
+    .header-menu {
+        margin-left: 15px;
+    }
+    
+    .header-menu .ant-menu-item {
+        padding: 0 10px !important;
+    }
+    
+    .username-text {
+        display: none;
+    }
+    
+    .theme-toggle {
+        margin-right: 8px !important;
+    }
+}
